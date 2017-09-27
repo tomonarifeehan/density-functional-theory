@@ -1,0 +1,43 @@
+&CONTROL
+  calculation='relax',
+  prefix='calc',
+  pseudo_dir='/gpfs/pace1/project/chbe-medford/medford-share/data/pseudos/SSSP_eff_PBE',
+  outdir='.',
+  tprnfor=.true.,
+/
+&SYSTEM
+  ibrav=0,
+  celldm(1)=1.8897261245650618d0,
+  nat=3,
+  ntyp=2,
+  ecutwfc=25.7245266536d0,
+  ecutrho=257.245266536d0,
+  nbnd=14,
+  occupations='smearing',
+  smearing='fd',
+  degauss=0.00734986475817d0,
+  input_dft='PBE',
+/
+&ELECTRONS
+  diagonalization='david',
+  conv_thr=7.34986475817e-08,
+  mixing_beta=0.7d0,
+  electron_maxstep=100,
+  conv_thr=7.34986475817e-08,
+/
+&IONS
+  ion_dynamics='ase3',
+/
+CELL_PARAMETERS
+   10.000000000000000d0     0.000000000000000d0     0.000000000000000d0
+    0.000000000000000d0    10.000000000000000d0     0.000000000000000d0
+    0.000000000000000d0     0.000000000000000d0    10.000000000000000d0
+ATOMIC_SPECIES
+O1 15.9994d0 O.UPF
+H1 1.00794d0 H.UPF
+ATOMIC_POSITIONS {crystal}
+O1       0.000000000000000d0     0.000000000000000d0     0.011926200000000d0
+H1       0.000000000000000d0     0.076323900000000d0     0.952295300000000d0
+H1       0.000000000000000d0     0.923676100000000d0     0.952295300000000d0
+K_POINTS automatic
+1 1 1 0 0 0
