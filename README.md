@@ -1,7 +1,7 @@
 # VIP_Semester_2
 Molecules and stuffs.
 
-NaCl             |  NaCl Bae
+NaCl                                |  NaCl Bae
 :-------------------------:|:-------------------------:
 
 <p float="left">
