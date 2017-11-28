@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -l nodes=1:ppn=14
 #PBS -l walltime=12:00:00
-#PBS -q joe
+#PBS -q joe-fast
 #PBS -N test
 #PBS -o stdout
 #PBS -e stderr
